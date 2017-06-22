@@ -1,0 +1,74 @@
+{
+  "name": "sharing-components",
+  "version": "0.0.1",
+  "description": "NearForm - Sharing Components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nearform/sharing-components.git"
+  },
+  "author": "NearForm",
+  "bugs": {
+    "url": "https://github.com/nearform/sharing-components/issues"
+  },
+  "homepage": "https://github.com/nearform/sharing-components#readme",
+  "scripts": {
+    "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
+    "test": "jest --coverage --verbose",
+    "bootstrap": "lerna bootstrap",
+    "build-storybook": "build-storybook",
+    "publish": "lerna publish",
+    "prepublish": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
+    "precommit": "npm test",
+    "postinstall": "npm run bootstrap"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.0.0-alpha.4",
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "glob-loader": "^0.3.0",
+    "jest": "^20.0.0",
+    "lerna": "^2.0.0-rc.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "jest": {
+    "resetMocks": true,
+    "resetModules": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "packages/**/*.js",
+      "!**/node_modules/**",
+      "!**/*.story.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!pcln-helper-mixins)/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>node_modules/",
+      "<rootDir>coverage/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js?(x)",
+      "**/?(*.)(spec).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>node_modules/"
+    ]
+  }
+}

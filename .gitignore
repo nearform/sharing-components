@@ -1,0 +1,6 @@
+node_modules
+coverage
+.idea
+npm-debug.log
+lerna-debug.log
+.DS_Store
