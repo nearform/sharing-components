@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Button = ({ children, onClick }) => (
-  <button className="button" onClick={onClick}>
+import StyledButton from './styles/styledButton'
+
+const Button = ({ type = 'button', children, onClick }, context) => (
+  <StyledButton type={type} className="button" onClick={onClick}>
     {children}
-  </button>
+  </StyledButton>
 )
 
 export default Button
