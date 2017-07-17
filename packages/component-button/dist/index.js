@@ -14,7 +14,7 @@ var _styledButton2 = _interopRequireDefault(_styledButton);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Button = function Button(_ref, context) {
+var Button = function Button(_ref) {
   var _ref$type = _ref.type,
       type = _ref$type === undefined ? 'button' : _ref$type,
       children = _ref.children,

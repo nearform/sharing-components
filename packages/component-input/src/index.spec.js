@@ -1,12 +1,12 @@
 import React from 'react'
-import { shallow, mount, render } from 'enzyme'
+import { mount } from 'enzyme'
 
 import Input from '.'
 
 describe('Input Component', function() {
 
   it('renders without props', function() {
-    const wrapper = shallow((<Input />))
+    const wrapper = mount((<Input />))
     const input = wrapper.find('input')
 
     expect(input.length).toBe(1)
@@ -14,7 +14,7 @@ describe('Input Component', function() {
 
   it('handles onChange events', () => {
     const onChange = jest.fn()
-    const wrapper = shallow((
+    const wrapper = mount((
       <Input onChange={onChange} />
     ))
 
