@@ -49,17 +49,14 @@ describe('Login Form Component', function() {
     expect(button.length).toBe(1)
   })
 
-  // it('login button triggers a submit', () => {
-  //   const onSubmit = jest.fn()
-  //   const wrapper = mount((
-  //     <LoginForm onSubmit={onSubmit} />
-  //   ))
-  //
-  //   const button = wrapper.find('button')
-  //   console.log(button)
-  //
-  //   wrapper.find('button').simulate('click')
-  //   expect(onSubmit.mock.calls.length).toBe(1)
-  // })
+  it('login button triggers a submit', () => {
+    const onSubmit = jest.fn()
+    const wrapper = mount((
+      <LoginForm onSubmit={onSubmit} />
+    ))
+
+    wrapper.find('form').simulate('submit')
+    expect(onSubmit.mock.calls.length).toBe(1)
+  })
 
 })
