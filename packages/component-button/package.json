@@ -1,0 +1,13 @@
+{
+  "name": "component-button",
+  "version": "0.0.1",
+  "description": "A simple button component",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "author": "NearForm",
+  "dependencies": {
+    "helper-nearformTheme": "0.0.1",
+    "react": "^15.6.1",
+    "styled-components": "^2.1.0"
+  }
+}

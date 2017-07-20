@@ -1,0 +1,8 @@
+{
+  "name": "helper-nearformTheme",
+  "version": "0.0.1",
+  "description": "Core NearForm theme",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "author": "NearForm"
+}

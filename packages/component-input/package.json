@@ -1,0 +1,11 @@
+{
+  "name": "component-input",
+  "version": "0.0.1",
+  "description": "A simple input component",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "author": "NearForm",
+  "dependencies": {
+    "react": "^15.6.1"
+  }
+}

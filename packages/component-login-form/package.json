@@ -1,0 +1,14 @@
+{
+  "name": "component-login-form",
+  "version": "0.0.1",
+  "description": "A simple login form component",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "author": "NearForm",
+  "dependencies": {
+    "helper-nearformTheme": "0.0.1",
+    "react": "^15.6.1",
+    "component-button": "^0.0.1",
+    "component-input": "^0.0.1"
+  }
+}
