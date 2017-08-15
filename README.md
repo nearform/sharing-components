@@ -1,7 +1,3 @@
-# sharing-components
+# Sharing Components
 
-* Cover Lerna
-  * What does Lerna do?
-  * Why should I use it?
-* Cover Jest
-* Cover Storybook
+Example repo and example code to accompany our [Sharing Components Blog](http://nearform.com/blog/sharing-react-components-with-lerna)
